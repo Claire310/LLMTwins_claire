@@ -17,3 +17,6 @@ pip3 install -r requirements.txt
 ```bash=
 uvicorn server:app --host 0.0.0.0 --port 8000 --reload
 ```
+
+#新增功能
+新增搜尋城市天氣及旅遊推薦功能，使用者輸入城市後，AI搜尋回覆天氣狀況並藉此推薦三個旅遊景點
