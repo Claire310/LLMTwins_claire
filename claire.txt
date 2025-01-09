@@ -1,0 +1,3 @@
+members:
+1.Claire
+2.Kelly

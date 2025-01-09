@@ -5,3 +5,6 @@ import json
 class prompt(BaseModel):
     role: str
     message: str
+
+class weather(BaseModel):
+    city: str
