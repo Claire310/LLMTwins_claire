@@ -38,3 +38,11 @@ def import_function_from_file(file_path, function_name):
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     return getattr(module, function_name)
+
+def load_agents_from_directory(role_dir):
+    modules = import_modules_from_directory(r"D:\Claire\LLMTwins_claire\agents\travel")
+    return modules['weather_agent'].agent
+
+if __name__ == "__main__":
+    modules = import_modules_from_directory(r"D:\Claire\LLMTwins_claire\agents\travel")
+    print (modules)
